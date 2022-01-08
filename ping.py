@@ -30,13 +30,13 @@ def loopPing():
                 achouFalha = True
         
         if achouFalha:
-            horario = time.strftime("%H:%M %S-seg")
+            horario = time.strftime("%Y%m%d %H:%M %Ss ")
             f = open( "down_output.txt", "a")
             f.write(str(ip) + "\t is down " + horario  + "########" + "\n")
             print(str(ip) + "\t is down "  + horario + "########")
             f.close()
         else:
-            horario = time.strftime("%H:%mm %S-seg")
+            horario = time.strftime("%Y%m%d %H:%M %Ss ")
             print(str(ip) + "\t is up " + horario)
 
 while True:
