@@ -16,7 +16,7 @@ def loopPing():
     with  open( "ip_list.txt") as file:
         dump = file.read()
         dump = dump.splitlines()
-        #print(dump)
+        print(dump, "  dump  ")
     
     
     print("______________________________________________")
